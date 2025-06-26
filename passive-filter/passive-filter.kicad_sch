@@ -3575,15 +3575,15 @@
 	(symbol
 		(lib_id "Device:C")
 		(at 127 31.75 0)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "a6a510b9-789e-4967-a258-d7ba1536cb3c")
 		(property "Reference" "C3"
-			(at 130.81 30.4799 0)
+			(at 130.81 33.0201 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3592,7 +3592,7 @@
 			)
 		)
 		(property "Value" "C"
-			(at 130.81 33.0199 0)
+			(at 130.81 30.4801 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3601,7 +3601,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm"
-			(at 127.9652 35.56 0)
+			(at 127.9652 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
