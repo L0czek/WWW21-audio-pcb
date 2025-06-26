@@ -237,19 +237,11 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Connector_Audio:AudioJack2_Switch"
+		(symbol "Connector_Audio:AudioJack3_SwitchTR"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "J"
-				(at 0 11.43 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "AudioJack2_Switch"
 				(at 0 8.89 0)
 				(effects
 					(font
@@ -257,25 +249,15 @@
 					)
 				)
 			)
+			(property "Value" "AudioJack3_SwitchTR"
+				(at 0 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
 			(property "Footprint" ""
-				(at 0 5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Audio Jack, 2 Poles (Mono / TS), Switched Pole (Normalling)"
 				(at 0 0 0)
 				(effects
 					(font
@@ -284,7 +266,25 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "audio jack receptacle mono headphones phone TS connector"
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Audio Jack, 3 Poles (Stereo / TRS), Switched TR Poles (Normalling)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "audio jack receptacle stereo headphones phones TRS connector"
 				(at 0 0 0)
 				(effects
 					(font
@@ -302,10 +302,10 @@
 					(hide yes)
 				)
 			)
-			(symbol "AudioJack2_Switch_0_1"
+			(symbol "AudioJack3_SwitchTR_0_1"
 				(rectangle
-					(start -2.54 0)
-					(end -3.81 -2.54)
+					(start -5.08 -5.08)
+					(end -6.35 -7.62)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -314,9 +314,57 @@
 						(type outline)
 					)
 				)
+				(polyline
+					(pts
+						(xy -1.905 -5.08) (xy -1.27 -5.715) (xy -0.635 -5.08) (xy -0.635 0) (xy 2.54 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -5.08) (xy 0.635 -5.715) (xy 1.27 -5.08) (xy 2.54 -5.08)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.508 -0.254) (xy 0.762 -0.762)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.778 -5.334) (xy 2.032 -5.842)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 				(rectangle
-					(start 2.54 6.35)
-					(end -2.54 -3.81)
+					(start 2.54 3.81)
+					(end -5.08 -10.16)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -325,82 +373,46 @@
 						(type background)
 					)
 				)
+				(polyline
+					(pts
+						(xy 2.54 2.54) (xy -2.54 2.54) (xy -2.54 -5.08) (xy -3.175 -5.715) (xy -3.81 -5.08)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 -2.54) (xy 0.508 -2.54) (xy 0.508 -0.254) (xy 0.254 -0.762)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 -7.62) (xy 1.778 -7.62) (xy 1.778 -5.334) (xy 1.524 -5.842)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 			)
-			(symbol "AudioJack2_Switch_1_1"
-				(polyline
-					(pts
-						(xy 0 0) (xy 0.635 -0.635) (xy 1.27 0) (xy 2.54 0)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.635 4.826) (xy 0.889 4.318)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.778 -0.254) (xy 2.032 -0.762)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 5.08) (xy -0.635 5.08) (xy -0.635 0) (xy -1.27 -0.635) (xy -1.905 0)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 2.54) (xy 0.635 2.54) (xy 0.635 4.826) (xy 0.381 4.318)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 -2.54) (xy 1.778 -2.54) (xy 1.778 -0.254) (xy 1.524 -0.762)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
+			(symbol "AudioJack3_SwitchTR_1_1"
 				(pin passive line
-					(at 5.08 5.08 180)
+					(at 5.08 2.54 180)
 					(length 2.54)
 					(name "~"
 						(effects
@@ -418,7 +430,7 @@
 					)
 				)
 				(pin passive line
-					(at 5.08 2.54 180)
+					(at 5.08 0 180)
 					(length 2.54)
 					(name "~"
 						(effects
@@ -427,7 +439,7 @@
 							)
 						)
 					)
-					(number "SN"
+					(number "R"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -436,7 +448,25 @@
 					)
 				)
 				(pin passive line
-					(at 5.08 0 180)
+					(at 5.08 -2.54 180)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "RN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -5.08 180)
 					(length 2.54)
 					(name "~"
 						(effects
@@ -454,7 +484,7 @@
 					)
 				)
 				(pin passive line
-					(at 5.08 -2.54 180)
+					(at 5.08 -7.62 180)
 					(length 2.54)
 					(name "~"
 						(effects
@@ -1069,7 +1099,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:R_Potentiometer"
+		(symbol "Device:R_Potentiometer_MountingPin"
 			(pin_names
 				(offset 1.016)
 				(hide yes)
@@ -1078,15 +1108,15 @@
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "RV"
-				(at -4.445 0 90)
+				(at -8.255 0 90)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" "R_Potentiometer"
-				(at -2.54 0 90)
+			(property "Value" "R_Potentiometer_MountingPin"
+				(at -6.35 0 90)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1111,7 +1141,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Potentiometer"
+			(property "Description" "Potentiometer with a mounting pin"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1138,7 +1168,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "R_Potentiometer_0_1"
+			(symbol "R_Potentiometer_MountingPin_0_1"
 				(rectangle
 					(start 1.016 2.54)
 					(end -1.016 -2.54)
@@ -1152,7 +1182,7 @@
 				)
 				(polyline
 					(pts
-						(xy 1.143 0) (xy 2.286 0.508) (xy 2.286 -0.508) (xy 1.143 0)
+						(xy 1.143 0) (xy 2.286 0.508) (xy 2.286 -0.508)
 					)
 					(stroke
 						(width 0)
@@ -1175,7 +1205,45 @@
 					)
 				)
 			)
-			(symbol "R_Potentiometer_1_1"
+			(symbol "R_Potentiometer_MountingPin_1_1"
+				(polyline
+					(pts
+						(xy -2.032 1.016) (xy -2.032 -1.016)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(text "Mounting"
+					(at -1.651 0 900)
+					(effects
+						(font
+							(size 0.381 0.381)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.048)
+					(name "MountPin"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "MP"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 				(pin passive line
 					(at 0 3.81 270)
 					(length 1.27)
@@ -1574,10 +1642,10 @@
 		)
 	)
 	(junction
-		(at 36.83 44.45)
+		(at 38.1 41.91)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "22633e27-2194-4193-a9f7-96773ded9d5a")
+		(uuid "0ff3b812-f8e5-4fba-92bf-d6fc94483920")
 	)
 	(junction
 		(at 50.8 90.17)
@@ -1586,28 +1654,28 @@
 		(uuid "28389e8e-bdbc-464d-b3de-d3cc01911531")
 	)
 	(junction
+		(at 36.83 44.45)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2b54f9fc-7852-4b0c-8e03-a8b38cd099e6")
+	)
+	(junction
+		(at 69.85 71.12)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3c3191be-623e-4efe-8c6d-02c69e064999")
+	)
+	(junction
 		(at 50.8 99.06)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3d7b9256-3920-48a1-ba5e-a19b0f30f708")
 	)
 	(junction
-		(at 69.85 41.91)
+		(at 71.12 41.91)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4750ccb0-2ec9-4564-b6a6-b5995e8413c7")
-	)
-	(junction
-		(at 36.83 46.99)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "48d7f324-4bff-4bb0-8b88-658acf5ed346")
-	)
-	(junction
-		(at 138.43 44.45)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "4bb682c7-7ec4-4c91-91c5-eba15b4e765a")
 	)
 	(junction
 		(at 41.91 99.06)
@@ -1622,10 +1690,10 @@
 		(uuid "66c00218-8431-49c2-af47-70c3ad77fce7")
 	)
 	(junction
-		(at 59.69 46.99)
+		(at 138.43 49.53)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "67a56052-6336-4cb5-bbc5-bd1405566948")
+		(uuid "6c6bdeac-c967-4882-b565-1db3303935d5")
 	)
 	(junction
 		(at 134.62 41.91)
@@ -1652,16 +1720,16 @@
 		(uuid "ae449dcc-0a2b-4588-b27b-31011b005bc2")
 	)
 	(junction
+		(at 60.96 46.99)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b452b2d2-df56-49de-9ab6-5928aee511cf")
+	)
+	(junction
 		(at 40.64 71.12)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "bdafde33-9cb8-4916-9016-82646e2ed90a")
-	)
-	(junction
-		(at 138.43 46.99)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c6384dab-1edc-4344-a514-8a14c6d51d87")
 	)
 	(junction
 		(at 50.8 107.95)
@@ -1679,10 +1747,22 @@
 		(at 49.53 41.91)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "e2ad128c-427a-4696-81f4-b2ba143b2cf3")
+		(uuid "d3c13bd2-d487-45f8-b48c-ece549efc59b")
 	)
 	(junction
-		(at 59.69 41.91)
+		(at 138.43 44.45)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d4caa46b-8d8b-4247-badd-b987bb09fa95")
+	)
+	(junction
+		(at 36.83 49.53)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "dacf84cd-c193-4c0d-a7b6-ca6666ce095f")
+	)
+	(junction
+		(at 60.96 41.91)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e6cb0bd0-86e7-4fc6-aced-1ba385a6c448")
@@ -1694,7 +1774,7 @@
 		(uuid "f551ee4c-22ec-4613-bcae-a68a73f90074")
 	)
 	(no_connect
-		(at 43.18 45.72)
+		(at 44.45 45.72)
 		(uuid "0beb1ab1-9c13-4a6f-8a73-b8cf3d3b3a61")
 	)
 	(no_connect
@@ -1725,13 +1805,23 @@
 	)
 	(wire
 		(pts
-			(xy 138.43 46.99) (xy 140.97 46.99)
+			(xy 138.43 39.37) (xy 138.43 44.45)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "0379a00c-6512-4a24-9fed-a02bcb9413d4")
+		(uuid "04d98679-5f62-49f7-bae0-6902971cbcc2")
+	)
+	(wire
+		(pts
+			(xy 48.26 41.91) (xy 49.53 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0676aaa3-97a9-482c-9bd0-f80a6e722a9e")
 	)
 	(wire
 		(pts
@@ -1745,23 +1835,43 @@
 	)
 	(wire
 		(pts
-			(xy 134.62 20.32) (xy 134.62 41.91)
+			(xy 39.37 49.53) (xy 36.83 49.53)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "0ddd280f-1237-46d6-b3e7-88149e80d658")
+		(uuid "0e2c8fa4-d4f5-4941-a9a6-642e30534940")
 	)
 	(wire
 		(pts
-			(xy 138.43 39.37) (xy 138.43 44.45)
+			(xy 134.62 41.91) (xy 143.51 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0f415dee-d7d8-4e11-aae9-7a8516813be6")
+	)
+	(wire
+		(pts
+			(xy 138.43 44.45) (xy 138.43 49.53)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "13fe4da4-ca20-4730-bb44-7c88d1c86dec")
+	)
+	(wire
+		(pts
+			(xy 38.1 41.91) (xy 38.1 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "15220fb8-c9f2-42f6-9a2a-558b4ea6da18")
 	)
 	(wire
 		(pts
@@ -1785,6 +1895,16 @@
 	)
 	(wire
 		(pts
+			(xy 138.43 49.53) (xy 143.51 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1b031584-ae09-43cf-a7d5-9883ab2b9d31")
+	)
+	(wire
+		(pts
 			(xy 50.8 107.95) (xy 33.02 107.95)
 		)
 		(stroke
@@ -1795,43 +1915,23 @@
 	)
 	(wire
 		(pts
-			(xy 78.74 41.91) (xy 85.09 41.91)
+			(xy 36.83 44.45) (xy 36.83 49.53)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "1fc927a0-4fd0-4528-95bb-470e1c124b2f")
+		(uuid "223b29cf-584d-40c2-b307-7dc3da23bf32")
 	)
 	(wire
 		(pts
-			(xy 36.83 39.37) (xy 36.83 44.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "228a897c-ff63-4645-99fc-8233015fcfff")
-	)
-	(wire
-		(pts
-			(xy 40.64 71.12) (xy 74.93 71.12)
+			(xy 40.64 71.12) (xy 69.85 71.12)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "23440a8a-97d2-4860-893e-b108f39986a4")
-	)
-	(wire
-		(pts
-			(xy 43.18 36.83) (xy 39.37 36.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "26f19534-0105-4f35-832c-a13ed7917d57")
 	)
 	(wire
 		(pts
@@ -1845,13 +1945,33 @@
 	)
 	(wire
 		(pts
-			(xy 43.18 36.83) (xy 43.18 38.1)
+			(xy 49.53 41.91) (xy 50.8 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "30156e7f-e6a2-467b-959b-53f087ff42f7")
+	)
+	(wire
+		(pts
+			(xy 44.45 36.83) (xy 44.45 38.1)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "30281fac-1cbb-4d42-9c83-82edb7d258f2")
+	)
+	(wire
+		(pts
+			(xy 38.1 36.83) (xy 44.45 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "30e31d05-ac0b-401d-9962-d66197571ca1")
 	)
 	(wire
 		(pts
@@ -1875,27 +1995,7 @@
 	)
 	(wire
 		(pts
-			(xy 39.37 41.91) (xy 34.29 41.91)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3f32ae86-bb3e-440e-8686-cf2ab8332fbf")
-	)
-	(wire
-		(pts
-			(xy 40.64 52.07) (xy 36.83 52.07)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "431bfa70-d547-425d-a5de-349215896fad")
-	)
-	(wire
-		(pts
-			(xy 36.83 52.07) (xy 36.83 46.99)
+			(xy 36.83 49.53) (xy 36.83 71.12)
 		)
 		(stroke
 			(width 0)
@@ -1935,13 +2035,23 @@
 	)
 	(wire
 		(pts
-			(xy 69.85 41.91) (xy 69.85 46.99)
+			(xy 71.12 41.91) (xy 71.12 46.99)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "50490711-02b3-4d8b-bf0c-002019a03e8b")
+	)
+	(wire
+		(pts
+			(xy 138.43 49.53) (xy 138.43 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "51809a19-f041-47f6-bca1-4823b58a3764")
 	)
 	(wire
 		(pts
@@ -1952,6 +2062,36 @@
 			(type default)
 		)
 		(uuid "52f85460-1b96-4673-b42c-18013c391add")
+	)
+	(wire
+		(pts
+			(xy 50.8 46.99) (xy 49.53 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5a622dac-9ecf-4824-8820-2f0e093743b6")
+	)
+	(wire
+		(pts
+			(xy 38.1 36.83) (xy 38.1 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5e41bcbd-590b-4fa5-8b97-c3fc360294c4")
+	)
+	(wire
+		(pts
+			(xy 36.83 71.12) (xy 40.64 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "62f791af-9e31-4703-86b2-721d8b8eddaa")
 	)
 	(wire
 		(pts
@@ -1975,7 +2115,27 @@
 	)
 	(wire
 		(pts
-			(xy 59.69 41.91) (xy 59.69 46.99)
+			(xy 134.62 20.32) (xy 134.62 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "77db1358-909e-44bb-b633-0f09466cc286")
+	)
+	(wire
+		(pts
+			(xy 134.62 46.99) (xy 134.62 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7d63a1fb-7f8a-4056-a3ab-4a65ee2c3015")
+	)
+	(wire
+		(pts
+			(xy 60.96 41.91) (xy 60.96 46.99)
 		)
 		(stroke
 			(width 0)
@@ -1985,7 +2145,17 @@
 	)
 	(wire
 		(pts
-			(xy 57.15 41.91) (xy 59.69 41.91)
+			(xy 49.53 46.99) (xy 49.53 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "82cd9d11-6fce-46d9-bd50-4314e7289596")
+	)
+	(wire
+		(pts
+			(xy 58.42 41.91) (xy 60.96 41.91)
 		)
 		(stroke
 			(width 0)
@@ -1995,7 +2165,7 @@
 	)
 	(wire
 		(pts
-			(xy 59.69 46.99) (xy 62.23 46.99)
+			(xy 60.96 46.99) (xy 63.5 46.99)
 		)
 		(stroke
 			(width 0)
@@ -2015,13 +2185,23 @@
 	)
 	(wire
 		(pts
-			(xy 138.43 44.45) (xy 140.97 44.45)
+			(xy 34.29 41.91) (xy 38.1 41.91)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "8a6c3d54-8def-41bc-bd00-bd2396a75b89")
+		(uuid "88769491-a6ba-4dce-998b-41e7c308064a")
+	)
+	(wire
+		(pts
+			(xy 34.29 39.37) (xy 36.83 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "888729cd-584d-4c00-bdfb-8d269d35cddb")
 	)
 	(wire
 		(pts
@@ -2045,13 +2225,13 @@
 	)
 	(wire
 		(pts
-			(xy 138.43 46.99) (xy 138.43 71.12)
+			(xy 69.85 60.96) (xy 69.85 71.12)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "90a1ab21-e85f-4199-8612-40edec7b057e")
+		(uuid "8e156dbf-2d5c-4d3d-ad49-2c4c3a04f6d9")
 	)
 	(wire
 		(pts
@@ -2085,6 +2265,16 @@
 	)
 	(wire
 		(pts
+			(xy 78.74 41.91) (xy 85.09 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "93f6fed9-d18c-4ec3-93c2-9cdf9da73114")
+	)
+	(wire
+		(pts
 			(xy 107.95 20.32) (xy 134.62 20.32)
 		)
 		(stroke
@@ -2115,16 +2305,6 @@
 	)
 	(wire
 		(pts
-			(xy 40.64 71.12) (xy 40.64 52.07)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a5016af0-6442-46b3-9c3d-ae53e1188b5a")
-	)
-	(wire
-		(pts
 			(xy 33.02 90.17) (xy 33.02 96.52)
 		)
 		(stroke
@@ -2135,37 +2315,37 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 46.99) (xy 34.29 46.99)
+			(xy 58.42 46.99) (xy 60.96 46.99)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "a8f4ac19-3dbe-4695-918b-df5071269425")
+		(uuid "aec63c46-2125-441b-a88e-6399542dc66f")
 	)
 	(wire
 		(pts
-			(xy 36.83 44.45) (xy 36.83 46.99)
+			(xy 69.85 71.12) (xy 74.93 71.12)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "af2e1ba5-2f7d-43e2-ba5f-017b0562d3ac")
+		(uuid "b6a92c58-09af-4433-8f03-d06a1b3131db")
 	)
 	(wire
 		(pts
-			(xy 138.43 44.45) (xy 138.43 46.99)
+			(xy 39.37 41.91) (xy 39.37 49.53)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "af9fb737-2f8a-47d2-af42-a34e607f11aa")
+		(uuid "b954a8e2-2f69-41c7-82dd-6cebc758f5b8")
 	)
 	(wire
 		(pts
-			(xy 69.85 41.91) (xy 78.74 41.91)
+			(xy 71.12 41.91) (xy 78.74 41.91)
 		)
 		(stroke
 			(width 0)
@@ -2175,7 +2355,27 @@
 	)
 	(wire
 		(pts
-			(xy 134.62 41.91) (xy 140.97 41.91)
+			(xy 36.83 39.37) (xy 36.83 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "be664ef1-c94b-48eb-8b0e-3fa1c6017595")
+	)
+	(wire
+		(pts
+			(xy 34.29 46.99) (xy 38.1 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c00265f6-0ffb-4a8d-b441-94e03258438f")
+	)
+	(wire
+		(pts
+			(xy 134.62 46.99) (xy 143.51 46.99)
 		)
 		(stroke
 			(width 0)
@@ -2195,13 +2395,13 @@
 	)
 	(wire
 		(pts
-			(xy 46.99 41.91) (xy 49.53 41.91)
+			(xy 74.93 60.96) (xy 69.85 60.96)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "c83c7cbc-994d-469e-90c9-05fb861931a5")
+		(uuid "c8f8b0b7-aa9d-4fbc-9258-b2dcf94b57cb")
 	)
 	(wire
 		(pts
@@ -2245,7 +2445,7 @@
 	)
 	(wire
 		(pts
-			(xy 34.29 44.45) (xy 36.83 44.45)
+			(xy 34.29 49.53) (xy 36.83 49.53)
 		)
 		(stroke
 			(width 0)
@@ -2285,7 +2485,7 @@
 	)
 	(wire
 		(pts
-			(xy 140.97 39.37) (xy 138.43 39.37)
+			(xy 143.51 44.45) (xy 138.43 44.45)
 		)
 		(stroke
 			(width 0)
@@ -2295,13 +2495,13 @@
 	)
 	(wire
 		(pts
-			(xy 39.37 36.83) (xy 39.37 41.91)
+			(xy 143.51 39.37) (xy 138.43 39.37)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "e21bb1ed-8405-4ece-8c7c-33f29aa5715e")
+		(uuid "e173d745-7151-4756-a029-a387ed5ed435")
 	)
 	(wire
 		(pts
@@ -2315,33 +2515,13 @@
 	)
 	(wire
 		(pts
-			(xy 59.69 41.91) (xy 62.23 41.91)
+			(xy 60.96 41.91) (xy 63.5 41.91)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "f408e9e5-2fb4-4353-ad49-ca981600777e")
-	)
-	(wire
-		(pts
-			(xy 57.15 46.99) (xy 59.69 46.99)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f9ada13f-49be-4550-8007-c2b09e282589")
-	)
-	(wire
-		(pts
-			(xy 49.53 41.91) (xy 49.53 46.99)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fd6a836b-e26f-4f15-bda7-fce4b2c1a0c9")
 	)
 	(wire
 		(pts
@@ -2355,7 +2535,7 @@
 	)
 	(wire
 		(pts
-			(xy 34.29 39.37) (xy 36.83 39.37)
+			(xy 34.29 44.45) (xy 36.83 44.45)
 		)
 		(stroke
 			(width 0)
@@ -2569,7 +2749,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "3672d41b-a0d2-4385-a679-f3e267d2acd7")
 		(property "Reference" "R7"
 			(at 87.63 48.2599 0)
@@ -2632,7 +2811,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Potentiometer")
+		(lib_id "Device:R_Potentiometer_MountingPin")
 		(at 74.93 66.04 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2641,15 +2820,14 @@
 		(dnp no)
 		(uuid "3ca24e2a-9850-4ed9-9788-1345a09172fc")
 		(property "Reference" "RV2"
-			(at 74.676 60.452 90)
+			(at 74.93 57.785 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
-		(property "Value" "R_Potentiometer"
+		(property "Value" "R_Potentiometer_MountingPin"
 			(at 75.438 62.992 90)
 			(effects
 				(font
@@ -2676,7 +2854,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Potentiometer"
+		(property "Description" "Potentiometer with a mounting pin"
 			(at 74.93 66.04 0)
 			(effects
 				(font
@@ -2694,6 +2872,9 @@
 		(pin "3"
 			(uuid "dffc3092-9764-41f5-841e-0a9ecaed42a6")
 		)
+		(pin "MP"
+			(uuid "85bbf8f7-7ebf-4806-a235-1fdfa5ed79da")
+		)
 		(instances
 			(project "passive-filter"
 				(path "/5feae2ec-2ba1-4c6b-bdab-ef6e2190dc80"
@@ -2705,16 +2886,16 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 66.04 41.91 90)
+		(at 67.31 41.91 270)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "3fcfb961-f233-47a8-b794-a3be3f73692f")
 		(property "Reference" "R2"
-			(at 66.04 35.56 90)
+			(at 67.31 35.56 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2722,7 +2903,7 @@
 			)
 		)
 		(property "Value" "R"
-			(at 66.04 38.1 90)
+			(at 67.31 38.1 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2730,7 +2911,7 @@
 			)
 		)
 		(property "Footprint" "universal-RLC:Universal-RLC"
-			(at 66.04 43.688 90)
+			(at 67.31 43.688 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2739,7 +2920,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 66.04 41.91 0)
+			(at 67.31 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2748,7 +2929,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 66.04 41.91 0)
+			(at 67.31 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2773,7 +2954,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 53.34 46.99 90)
+		(at 54.61 46.99 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2781,7 +2962,7 @@
 		(dnp no)
 		(uuid "48e91c71-af1c-450c-87ff-3ebe47f0921f")
 		(property "Reference" "R3"
-			(at 53.34 51.816 90)
+			(at 54.61 51.816 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2789,7 +2970,7 @@
 			)
 		)
 		(property "Value" "R"
-			(at 53.34 49.53 90)
+			(at 54.61 49.53 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2797,7 +2978,7 @@
 			)
 		)
 		(property "Footprint" "universal-RLC:Universal-RLC"
-			(at 53.34 48.768 90)
+			(at 54.61 48.768 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2806,7 +2987,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 53.34 46.99 0)
+			(at 54.61 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2815,7 +2996,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 53.34 46.99 0)
+			(at 54.61 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2866,7 +3047,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Axial_L18.0mm_D10.0mm_P25.00mm_Horizontal"
+		(property "Footprint" "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm"
 			(at 51.7652 107.95 0)
 			(effects
 				(font
@@ -2983,7 +3164,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 66.04 46.99 90)
+		(at 67.31 46.99 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2991,7 +3172,7 @@
 		(dnp no)
 		(uuid "53d74c11-fecd-4045-97f7-b82d292e84f8")
 		(property "Reference" "R4"
-			(at 66.04 52.324 90)
+			(at 67.31 52.324 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2999,7 +3180,7 @@
 			)
 		)
 		(property "Value" "R"
-			(at 66.04 49.784 90)
+			(at 67.31 49.784 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3007,7 +3188,7 @@
 			)
 		)
 		(property "Footprint" "universal-RLC:Universal-RLC"
-			(at 66.04 48.768 90)
+			(at 67.31 48.768 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3016,7 +3197,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 66.04 46.99 0)
+			(at 67.31 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3025,7 +3206,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 66.04 46.99 0)
+			(at 67.31 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3076,7 +3257,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Axial_L18.0mm_D10.0mm_P25.00mm_Horizontal"
+		(property "Footprint" "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm"
 			(at 51.7652 97.79 0)
 			(effects
 				(font
@@ -3192,7 +3373,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "73056d49-cec3-4d52-a281-58279107708c")
 		(property "Reference" "R8"
 			(at 87.63 58.4199 0)
@@ -3596,16 +3776,16 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 78.74 59.69 180)
+		(at 78.74 59.69 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "cc95b20b-58e0-4231-b3a6-56b6667b059e")
 		(property "Reference" "R6"
-			(at 81.28 58.4199 0)
+			(at 81.28 60.9601 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3614,7 +3794,7 @@
 			)
 		)
 		(property "Value" "R"
-			(at 81.28 60.9599 0)
+			(at 81.28 58.4201 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3666,16 +3846,16 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 53.34 41.91 90)
+		(at 54.61 41.91 270)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "ccc989fb-e75a-4c0c-9eb5-e57d5170b4ef")
 		(property "Reference" "R1"
-			(at 53.34 35.56 90)
+			(at 54.61 35.56 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3683,7 +3863,7 @@
 			)
 		)
 		(property "Value" "R"
-			(at 53.34 38.1 90)
+			(at 54.61 38.1 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3691,7 +3871,7 @@
 			)
 		)
 		(property "Footprint" "universal-RLC:Universal-RLC"
-			(at 53.34 43.688 90)
+			(at 54.61 43.688 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3700,7 +3880,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 53.34 41.91 0)
+			(at 54.61 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3709,7 +3889,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 53.34 41.91 0)
+			(at 54.61 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3800,16 +3980,16 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 78.74 49.53 180)
+		(at 78.74 49.53 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "e08d4046-369a-4457-91d2-c450f70232f4")
 		(property "Reference" "R5"
-			(at 81.28 48.2599 0)
+			(at 81.28 50.8001 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3818,7 +3998,7 @@
 			)
 		)
 		(property "Value" "R"
-			(at 81.28 50.7999 0)
+			(at 81.28 48.2601 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3935,8 +4115,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Audio:AudioJack2_Switch")
-		(at 29.21 41.91 0)
+		(lib_id "Connector_Audio:AudioJack3_SwitchTR")
+		(at 29.21 46.99 0)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3945,22 +4125,22 @@
 		(dnp no)
 		(uuid "e7b62520-9dbd-46d0-af57-0aec67ac3915")
 		(property "Reference" "J1"
-			(at 28.575 53.34 0)
+			(at 28.575 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "AudioJack2_Switch"
-			(at 28.575 50.8 0)
+		(property "Value" "AudioJack3_SwitchTR"
+			(at 28.575 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "Connector_Audio:Jack_6.35mm_Neutrik_NMJ4HHD2_Horizontal"
+		(property "Footprint" "Connector_Audio:Jack_3.5mm_CUI_SJ1-3525N_Horizontal"
 			(at 29.21 46.99 0)
 			(effects
 				(font
@@ -3978,8 +4158,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Audio Jack, 2 Poles (Mono / TS), Switched Pole (Normalling)"
-			(at 29.21 41.91 0)
+		(property "Description" "Audio Jack, 3 Poles (Stereo / TRS), Switched TR Poles (Normalling)"
+			(at 29.21 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3996,8 +4176,11 @@
 		(pin "S"
 			(uuid "1517daae-3cfb-43b0-90a9-0194bab47b74")
 		)
-		(pin "SN"
+		(pin "R"
 			(uuid "0b1590eb-40d8-4554-8bc8-3eb4e751e226")
+		)
+		(pin "RN"
+			(uuid "263dc07c-073e-4965-8ef1-8e62c8850a14")
 		)
 		(instances
 			(project ""
@@ -4227,8 +4410,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Potentiometer")
-		(at 43.18 41.91 0)
+		(lib_id "Device:R_Potentiometer_MountingPin")
+		(at 44.45 41.91 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4236,16 +4419,15 @@
 		(dnp no)
 		(uuid "f71fd543-9944-455a-919f-1b76bf8ea601")
 		(property "Reference" "RV1"
-			(at 42.926 32.766 0)
+			(at 36.195 41.91 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
-		(property "Value" "R_Potentiometer"
-			(at 42.672 34.798 0)
+		(property "Value" "R_Potentiometer_MountingPin"
+			(at 43.942 34.798 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4254,7 +4436,7 @@
 			)
 		)
 		(property "Footprint" "Potentiometer_THT:Potentiometer_Bourns_PTV09A-1_Single_Vertical"
-			(at 43.18 41.91 0)
+			(at 44.45 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4263,7 +4445,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 43.18 41.91 0)
+			(at 44.45 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4271,8 +4453,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Potentiometer"
-			(at 43.18 41.91 0)
+		(property "Description" "Potentiometer with a mounting pin"
+			(at 44.45 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4289,6 +4471,9 @@
 		(pin "3"
 			(uuid "d40b137d-346d-454d-9ea0-4317732cc3e8")
 		)
+		(pin "MP"
+			(uuid "7e8feed0-5c16-4cc8-8b40-9153adb799b7")
+		)
 		(instances
 			(project ""
 				(path "/5feae2ec-2ba1-4c6b-bdab-ef6e2190dc80"
@@ -4299,8 +4484,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Audio:AudioJack2_Switch")
-		(at 146.05 41.91 180)
+		(lib_id "Connector_Audio:AudioJack3_SwitchTR")
+		(at 148.59 46.99 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4308,23 +4493,23 @@
 		(dnp no)
 		(uuid "f8cca9f3-cfdf-4a86-b888-394327c31691")
 		(property "Reference" "J2"
-			(at 146.685 53.34 0)
+			(at 149.225 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "AudioJack2_Switch"
-			(at 146.685 50.8 0)
+		(property "Value" "AudioJack3_SwitchTR"
+			(at 149.225 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "Connector_Audio:Jack_6.35mm_Neutrik_NMJ4HHD2_Horizontal"
-			(at 146.05 46.99 0)
+		(property "Footprint" "Connector_Audio:Jack_3.5mm_CUI_SJ1-3525N_Horizontal"
+			(at 148.59 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4333,7 +4518,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 146.05 46.99 0)
+			(at 148.59 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4341,8 +4526,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Audio Jack, 2 Poles (Mono / TS), Switched Pole (Normalling)"
-			(at 146.05 41.91 0)
+		(property "Description" "Audio Jack, 3 Poles (Stereo / TRS), Switched TR Poles (Normalling)"
+			(at 148.59 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4359,8 +4544,11 @@
 		(pin "S"
 			(uuid "e9f2fa84-74aa-4fda-bfb9-70562fcd3eb2")
 		)
-		(pin "SN"
+		(pin "R"
 			(uuid "527561ce-41e4-4042-9a83-f44fa5e6738f")
+		)
+		(pin "RN"
+			(uuid "c1211b81-ba86-4221-9299-2551e0397a2c")
 		)
 		(instances
 			(project "passive-filter"
