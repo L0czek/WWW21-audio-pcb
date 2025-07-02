@@ -18271,22 +18271,6 @@
 		(uuid "a25d6b48-5045-4262-a43e-9ac9706a095e")
 	)
 	(segment
-		(start 209.9675 55.9675)
-		(end 210 56)
-		(width 0.8)
-		(layer "F.Cu")
-		(net 11)
-		(uuid "20f479ac-6425-4497-85fa-0ac20227915a")
-	)
-	(segment
-		(start 209.75 55.9675)
-		(end 209.9675 55.9675)
-		(width 0.8)
-		(layer "F.Cu")
-		(net 11)
-		(uuid "66580c2a-0deb-4561-942d-781659fb44a6")
-	)
-	(segment
 		(start 217 55.9675)
 		(end 223.3875 55.9675)
 		(width 0.8)
